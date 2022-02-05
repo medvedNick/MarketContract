@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
 
-./build.sh
+./token/build.sh
+./market/build.sh
 
 near delete market.$1.testnet $1.testnet || true
 near create-account market.$1.testnet --masterAccount $1.testnet

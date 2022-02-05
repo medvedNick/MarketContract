@@ -1,2 +1,4 @@
 /target
 *.wasm
+token/target
+market/target

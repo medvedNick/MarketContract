@@ -6,6 +6,7 @@ use near_sdk::{
     AccountId, PanicOnDefault, Promise, Gas, PromiseResult, Balance
 };
 
+const TOKEN_CONTRACT: &[u8] = include_bytes!("../../token/res/token_contract.wasm");
 const GAS_FOR_ACCOUNT_CALLBACK: Gas = Gas(110_000_000_000_000);
 
 #[near_bindgen]
