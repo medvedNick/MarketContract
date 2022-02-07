@@ -2,7 +2,7 @@
 set -e
 
 cd token
-./build.sh
+./test.sh
 cd ../market
-./build.sh
+./test.sh
 cd ..
